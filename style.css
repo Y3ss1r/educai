@@ -15,12 +15,23 @@
 	box-shadow: border-box;
 }
 
-body {
-	background: white url('images/backgrounds/background-grey.png');
+body, html{
+	height: 100%;
 }
 
 .clear {
 	clear: both;
+
+}
+
+.parallax {
+	background: white url(images/backgrounds/background-grey.png);
+	height: 100%;
+
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 /*\/=====/ Barra de rolagem \=====/\*/
@@ -95,6 +106,7 @@ body {
 	gap: 10px;
 	padding: 10px;
 	margin-top: 10%;
+	margin-left: 5%;
 }
 
 .card {
