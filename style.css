@@ -1,0 +1,125 @@
+/*\/=====/ Importação as fontes \=====/\*/
+
+@import url('http://fonts.cdnfonts.com/css/lovely-jeanne-sans'); /*LOGO*/
+@import url('http://fonts.cdnfonts.com/css/fortunecity'); /*CARD TITLES */
+@import url('http://fonts.cdnfonts.com/css/existence-light'); /*NAV BAR LINKS*/
+@import url('http://fonts.cdnfonts.com/css/roman-serif'); /*UNIVERSAL*/
+
+
+/*\/=====/ Formatações gerais \=====/\*/
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'RomanSerif', Verdana, sans-serif;
+	box-shadow: border-box;
+}
+
+body {
+	background: white url('images/backgrounds/background-grey.png');
+}
+
+.clear {
+	clear: both;
+}
+
+/*\/=====/ Barra de rolagem \=====/\*/
+
+:-webkit-scrollbar-track {
+    background-color: #1124D3;
+}
+::-webkit-scrollbar {
+    width: 6px;
+    background: #2275C2;
+
+}
+::-webkit-scrollbar-thumb {
+    background: #B2C7B8;
+    border-radius: 8px;
+    margin: 1px;
+}
+
+/*\/=====/ Formatação do cabeçalho \=====/\*/
+
+.div-menu {
+	border-bottom: 2px solid #0052cc;
+	background: #1781DF url(images/backgrounds/background.svg);
+	color: white;
+	height: 90px;
+	text-align: center;
+	position: relative;
+
+}
+
+.navbar {
+	padding-top: 35px;
+}
+
+.navbar__links {
+	text-decoration: none;
+	font-family: 'FortuneCity', Verdana, sans-serif;
+	color: white;
+	
+	padding: 8px 8px;
+	margin: auto 10px;
+	
+}
+
+.navbar__links:hover {
+	transition: 0.5s;
+	color: #1781DF;
+	background: white;
+	border-radius: 7px;
+}
+
+.navbar__links--left-item {
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	font-family: 'Lovely Jeanne Sans', sans-serif;
+	font-size: 40px;
+
+	padding: 8px 8px;
+	margin: auto 10px;
+	margin-right: 60%;
+	border: none;
+	
+}
+
+/*\/=====/ Formatação dos cards \=====/\*/
+
+.grid-container {
+	display: grid;
+	justify-content: space-between;
+	grid-template-columns: auto auto auto auto;
+	gap: 10px;
+	padding: 10px;
+	margin-top: 10%;
+}
+
+.card {
+  font-family: 'Comfortaa', sans-serif;
+  text-align: center;
+
+  background: #1781DF url('images/backgrounds/card-background.svg');
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px 2px #1F1F1F;
+  
+  width: 292px;
+  height: 206px;
+  padding: 5px;
+  margin: 10px;
+}
+
+.card:hover {
+	box-shadow: 3px 3px 5px 3px #1F1F1F;
+}
+
+.card__title {
+	font-family: 'Existence Light', sans-serif;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+
+	padding-top: 103px ;
+}
