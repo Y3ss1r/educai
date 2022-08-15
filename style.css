@@ -56,10 +56,11 @@ body, html{
 	border-bottom: 2px solid #0052cc;
 	background: #1781DF url(images/backgrounds/background.svg);
 	color: white;
-	height: 90px;
-	text-align: center;
-	position: relative;
 
+	overflow: hidden;
+	width: 100%;
+	top: 0;
+	position: fixed;
 }
 
 .navbar {
@@ -106,7 +107,7 @@ body, html{
 	gap: 10px;
 	padding: 10px;
 	margin-top: 10%;
-	margin-left: 5%;
+	margin-left: 6%;
 }
 
 .card {
