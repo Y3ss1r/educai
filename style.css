@@ -25,7 +25,7 @@ body, html{
 }
 
 .parallax {
-	background: white url(images/backgrounds/background-grey.png);
+	background: white url('images/backgrounds/background-grey.png');
 	height: 100%;
 
 	background-attachment: fixed;
@@ -37,11 +37,11 @@ body, html{
 /*\/=====/ Barra de rolagem \=====/\*/
 
 :-webkit-scrollbar-track {
-    background-color: #1124D3;
+    background-color: #0C3971;
 }
 ::-webkit-scrollbar {
     width: 6px;
-    background: #2275C2;
+    background: #0C3971;
 
 }
 ::-webkit-scrollbar-thumb {
@@ -52,13 +52,14 @@ body, html{
 
 /*\/=====/ Formatação do cabeçalho \=====/\*/
 
-.div-menu {
-	border-bottom: 2px solid #0052cc;
-	background: #1781DF url(images/backgrounds/background.svg);
+.header-menu {
+	border-bottom: 2px solid #0C3971;
+	background: #0C3971 url(images/backgrounds/background.png);
 	color: white;
 
 	overflow: hidden;
 	width: 100%;
+	height: 90px;
 	top: 0;
 	position: fixed;
 }
@@ -68,6 +69,8 @@ body, html{
 }
 
 .navbar__links {
+
+	float: right;
 	text-decoration: none;
 	font-family: 'FortuneCity', Verdana, sans-serif;
 	color: white;
@@ -79,12 +82,14 @@ body, html{
 
 .navbar__links:hover {
 	transition: 0.5s;
-	color: #1781DF;
+	color: #0C3971;
 	background: white;
 	border-radius: 7px;
 }
 
-.navbar__links--left-item {
+.navbar__links--logo {
+
+	float: left !important;
 	text-decoration: none;
 	color: white;
 	font-weight: bold;
@@ -93,6 +98,8 @@ body, html{
 
 	padding: 8px 8px;
 	margin: auto 10px;
+	margin-left: 20px;
+	margin-bottom: 20px;
 	margin-right: 60%;
 	border: none;
 	
@@ -103,18 +110,17 @@ body, html{
 .grid-container {
 	display: grid;
 	justify-content: space-between;
-	grid-template-columns: auto auto auto auto;
-	gap: 10px;
+	grid-template-columns: auto auto auto;
+	gap: 50px;
 	padding: 10px;
 	margin-top: 10%;
-	margin-left: 6%;
 }
 
 .card {
   font-family: 'Comfortaa', sans-serif;
   text-align: center;
 
-  background: #1781DF url('images/backgrounds/card-background.svg');
+  background: #0C3971 url('images/backgrounds/card-background.png');
   border-radius: 20px;
   box-shadow: 2px 2px 5px 2px #1F1F1F;
   
